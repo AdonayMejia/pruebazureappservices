@@ -1,0 +1,160 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background-color:#B0E5F5;
+	font-family: sans-serif;
+
+}
+
+/*Aplica un estilo a la header del archivo*/
+header{
+	z-index: 1;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	top: 0px;
+	background-color: #3498DB;
+}
+.ancho{
+	width: 80%;
+	height:70px;
+	margin: auto;/*para que aparezaca centrado respecto al heaeder*/
+}
+.logo{
+	width: 30%;
+	height: 70px;
+	float:left; /*para moverlo respecto a la clase ancho*/
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+.logo p a{
+	color:#FFF;
+	font-size: 40px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: monospace;
+}
+#logo-menu{
+
+	width: 15%;
+	float: left;
+	padding-bottom: 5px;
+}
+nav{
+	width: 70%;
+	height:70px;
+	float: left;
+	text-align: right; /*para mover el menu a la derecha**/
+	padding-top: 24px;
+	box-sizing: border-box;/*para forzarle que ocupe la medida que nosotros prestablecimos*/
+}
+nav ul li{
+	display: inline;/*para que la parde de la lista salga en linea*/
+}
+nav ul li a{
+	color: #566573;
+	font-size: 16px;
+	text-decoration: none;
+	padding-left: 15px;/*agregar una seperacion de las letras del menu*/
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-family: monospace;
+	text-transform: uppercase;
+}
+nav ul li a:hover{
+	color:#444;
+}
+/*Regla que le da posicion al contendor principal*/
+.principal{
+	opacity: .5;
+	margin: 0px auto;
+	width: 90%;
+	background: url(../img/sv.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+	margin-top: 6%;
+	margin-bottom: 3%;
+	padding: 10px;
+}
+
+.principal .texto{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	font-family: sans-serif;
+	user-select: none;
+	transform: translate(-50%,-50%);
+}
+.texto h1{
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	width: 900px;
+	text-align: center;
+}
+.texto h2{
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	width: 885px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.texto .opciones{
+	margin: 35px 280px;
+}
+
+.opciones button{
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background: red;
+	border: 1 px solid #cc0000;
+	cursor: pointer;
+	outline: none;/*para que no se salga el borde de cuadrado*/
+	border-radius: 25px;
+	transition: 2s;	
+}
+.opciones button a{
+	text-decoration: none;
+	color: white;
+}
+.btn2{
+	margin-left: 25px;	
+}
+
+.opciones button:hover{
+	background: #cc0000;
+}
+
+/*Aplica estilo para el footer de la pagina*/
+footer{
+	width: 100%;
+	height: 135px;
+	background-color: #3498DB;
+	padding-top: 20px;
+	margin-top: 1%; 
+	text-align: center;
+}
+
+footer p{
+	color: white;
+	margin: 0;
+	padding-top: 10px;
+}
+
+#contacto{
+	margin:0 auto;
+	padding: 10px;
+}
+
+#contacto td{
+	padding-left: 15px;
+}
+
